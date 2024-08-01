@@ -37,7 +37,7 @@ export default function Home() {
             <Image src={logo} width={50} height={50}></Image>
           </div>
 
-          <div className="mx-auto max-w-[1280px] flex justify-between gap-20 max-sm:flex-col max-sm:justify-center max-sm:items-center lg:mt-16 mt-32">
+          <div className="mx-auto max-w-[1280px] flex justify-between gap-20 max-sm:flex-col max-sm:justify-center max-sm:items-center mt-16">
             {/* Left */}
             <div className="basis-1/2 px-3 flex flex-col justify-center gap-4 max-sm:items-center">
               <p className="text-6xl flex">
