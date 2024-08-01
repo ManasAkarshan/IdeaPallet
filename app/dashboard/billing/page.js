@@ -9,6 +9,7 @@ import moment from 'moment'
 import { db } from '@/app/utils/db'
 import { userSubscription } from '@/app/utils/schema'
 import { UserSubscriptionContext } from '@/app/(context)/UserSubscriptionContext'
+import Script from 'next/script'
 
 function Billing() {
   const [loading, setLoading] = useState(false)
@@ -58,7 +59,7 @@ function Billing() {
   }
   return (
     <div className='flex mt-16 items-center justify-center'>
-      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+      <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
       <div className='text-center'>
         <h2 className='text-4xl mb-10 font-extrabold'>Upgrade your plan</h2>
         <div className='flex gap-5 mt-3 max-sm:flex-col'>

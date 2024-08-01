@@ -2,7 +2,9 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { ArrowBigLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import logo from '../public/logo.png'
 export default function Home() {
   const router = useRouter();
   return (
@@ -16,7 +18,7 @@ export default function Home() {
         }}
       >
         <div className="w-full flex justify-between items-center min-h-[5vh] p-2 px-10 max-sm:px-3 bg-secondary shadow-md">
-          <img src="/logo.png" width={50} height={50}></img>
+          <Image src={logo} width={50} height={50}></Image>
 
         </div>
 
@@ -25,12 +27,12 @@ export default function Home() {
           <div className="basis-1/2 px-3 flex flex-col justify-center gap-4 max-sm:items-center">
             <p className="text-6xl flex">
               Idea <span className="text-cyan-500 ">Pallet</span>
-              <img src="/logo.png" className="ml-4" width={60} height={40}></img>
+              <Image src={logo} className="ml-4" width={60} height={40}></Image>
             </p>
             <p className="max-sm:text-center">
               IdeaPallet is an AI-powered content generator that helps you
               create high-quality articles, blog posts, and other written
-              materials on a wide range of topics. Whether you're looking for
+              materials on a wide range of topics. Whether you are looking for
               inspiration or need to quickly generate engaging content,
               ContentCanvas makes it easy to produce well-structured text in
               seconds.

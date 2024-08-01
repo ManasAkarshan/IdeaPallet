@@ -17,12 +17,6 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-        <header className="flex items-center p-4 border-b">
-          <div className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="Idea Pallet Logo" width={40} height={40} />
-            <span className="text-xl font-bold">Idea Pallet</span>
-          </div>
-        </header>
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"

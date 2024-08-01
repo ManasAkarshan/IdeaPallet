@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import UsageTrack from "./UsageTrack";
 import Link from "next/link";
+import Image from "next/image";
+import logo from '../../../public/logo.png'
 
 function Sidenav() {
   const MenuList = [
@@ -19,7 +21,7 @@ function Sidenav() {
     <div className="sm:h-full sm:min-h-screen sm:p-4 p-2 max-sm:py-3 shadow-sm border max-sm:pb-1 ">
       <div>
         <div className="flex justify-center items-center  gap-2">
-          <img src="/logo.png" width={30}></img>
+          <Image src={logo} width={30}></Image>
           <h2 className="text-3xl max-sm:text-2xl font-bold text-center ">
             IdeaPallet
           </h2>
